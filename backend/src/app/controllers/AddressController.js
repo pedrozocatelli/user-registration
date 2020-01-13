@@ -22,9 +22,9 @@ class AddressController {
     const addressess = req.body.addresses.map(address => {
       async function loadAddresses() {
         try {
-          // if (!(await schema.isValid(address))) {
-          //   return res.status(400).json({ error: 'Validação Falhou' });
-          // }
+           if (!(await schema.isValid(address))) {
+             return res.status(400).json({ error: 'Validação Falhou' });
+           }
 
           const addressExists = await Address.findOne({
             where: {
@@ -68,9 +68,9 @@ class AddressController {
     const addressess = req.body.addresses.map(address => {
       async function loadAddresses() {
         try {
-          // if (!(await schema.isValid(address))) {
-          //   return res.status(400).json({ error: 'Validação Falhou' });
-          // }
+           if (!(await schema.isValid(address))) {
+             return res.status(400).json({ error: 'Validação Falhou' });
+            }
 
           const addressFind = await Address.findByPk(address.id);
 
