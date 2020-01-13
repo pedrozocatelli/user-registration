@@ -69,3 +69,15 @@ img {
   margin-right: auto;
   display: block;
 }
+
+.content-add button.btn-voltar {
+  background-color: #08c;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.content-add button.btn-voltar:hover {
+  background-color: #067ab4;
+}

@@ -6,7 +6,8 @@ import AddressController from './app/controllers/AddressController';
 const routes = new Router();
 
 routes.post('/users', UserController.store);
-routes.get('/users', UserController.index);
+routes.get('/users', UserController.list);
+routes.get('/users/:id', UserController.index);
 routes.put('/users', UserController.update);
 routes.delete('/users/:id', UserController.delete);
 

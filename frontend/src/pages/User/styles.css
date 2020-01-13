@@ -60,11 +60,6 @@ label {
   outline: none;
   margin-right: 15px;
   -webkit-appearance: none;
-  font-weight: bold;
-}
-
-.content-add button:hover {
-  background-color: #067ab4;
 }
 
 .content-add button:disabled {
@@ -100,13 +95,6 @@ hr.division {
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
-hr.division-two {
-  margin-top: 30px;
-  border: 0;
-  height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
 
 input[type='radio'] {
   clear: none;
@@ -135,6 +123,11 @@ select {
   width: 100%;
   height: 45px;
 }
-.end-secundario-hide {
-  display: none;
+
+.add-title-main {
+  color: rgb(41, 41, 41);
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -60px;
 }
